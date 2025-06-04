@@ -1,27 +1,14 @@
-from isaacsim import SimulationApp
 import os
 import hydra
 import rclpy
 import torch
 import time
 import math
-
-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
-# All rights reserved.
-#
-# SPDX-License-Identifier: BSD-3-Clause
-
 import argparse
-
-from isaaclab.app import AppLauncher
-
-import argparse
-
 from isaaclab.app import AppLauncher
 
 # add argparse arguments
 parser = argparse.ArgumentParser(description="Tutorial on running the cartpole RL environment.")
-parser.add_argument("--num_envs", type=int, default=16, help="Number of environments to spawn.")
 
 # append AppLauncher cli args
 AppLauncher.add_app_launcher_args(parser)
@@ -36,12 +23,9 @@ simulation_app = app_launcher.app
 
 import torch
 
-from isaaclab.envs import ManagerBasedRLEnv
-
 from go2.go2_env import Go2RSLEnvCfg, camera_follow
 import env.sim_env as sim_env
 import go2.go2_sensors as go2_sensors
-# launch omniverse app
 import omni
 import carb
 import go2.go2_ctrl as go2_ctrl
@@ -50,13 +34,8 @@ import ros2.go2_ros2_bridge as go2_ros2_bridge
 FILE_PATH = os.path.join(os.path.dirname(__file__), "cfg")
 @hydra.main(config_path=FILE_PATH, config_name="sim", version_base=None)
 def run_simulator(cfg):
-    
-    # from go2.go2_env import Go2RSLEnvCfg, camera_follow
-    
-
 
     # Go2 Environment setup
-
     go2_env_cfg = Go2RSLEnvCfg()
     go2_env_cfg.scene.num_envs = cfg.num_envs
     go2_env_cfg.decimation = math.ceil(1./go2_env_cfg.sim.dt/cfg.freq)

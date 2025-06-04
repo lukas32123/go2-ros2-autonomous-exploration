@@ -6,63 +6,32 @@ import torch
 import time
 import math
 
-# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
-# All rights reserved.
-#
-# SPDX-License-Identifier: BSD-3-Clause
-
-import argparse
-
-from isaaclab.app import AppLauncher
-
-import argparse
-
-from isaaclab.app import AppLauncher
-
-# add argparse arguments
-parser = argparse.ArgumentParser(description="Tutorial on running the cartpole RL environment.")
-parser.add_argument("--num_envs", type=int, default=16, help="Number of environments to spawn.")
-
-# append AppLauncher cli args
-AppLauncher.add_app_launcher_args(parser)
-# parse the arguments
-args_cli = parser.parse_args()
-
-# launch omniverse app
-app_launcher = AppLauncher(args_cli)
-simulation_app = app_launcher.app
-
-"""Rest everything follows."""
-
-import torch
-
-from isaaclab.envs import ManagerBasedRLEnv
-
-from go2.go2_env import Go2RSLEnvCfg, camera_follow
-import env.sim_env as sim_env
-import go2.go2_sensors as go2_sensors
-# launch omniverse app
-import omni
-import carb
-import go2.go2_ctrl as go2_ctrl
-import ros2.go2_ros2_bridge as go2_ros2_bridge
-
 FILE_PATH = os.path.join(os.path.dirname(__file__), "cfg")
 @hydra.main(config_path=FILE_PATH, config_name="sim", version_base=None)
 def run_simulator(cfg):
-    
-    # from go2.go2_env import Go2RSLEnvCfg, camera_follow
-    
+    # launch omniverse app
+    simulation_app = SimulationApp({"headless": False, "anti_aliasing": cfg.sim_app.anti_aliasing,
+                                    "width": cfg.sim_app.width, "height": cfg.sim_app.height, 
+                                    "hide_ui": cfg.sim_app.hide_ui})
+
+    import omni
+    import carb
+    import go2.go2_ctrl as go2_ctrl
+    import ros2.go2_ros2_bridge as go2_ros2_bridge
+    from go2.go2_env import Go2RSLEnvCfg, camera_follow
+    import env.sim_env as sim_env
+    import go2.go2_sensors as go2_sensors
 
 
     # Go2 Environment setup
-
     go2_env_cfg = Go2RSLEnvCfg()
     go2_env_cfg.scene.num_envs = cfg.num_envs
     go2_env_cfg.decimation = math.ceil(1./go2_env_cfg.sim.dt/cfg.freq)
     go2_env_cfg.sim.render_interval = go2_env_cfg.decimation
     go2_ctrl.init_base_vel_cmd(cfg.num_envs)
     # env, policy = go2_ctrl.get_rsl_flat_policy(go2_env_cfg)
+    print(f"go2_env_cfg: {go2_env_cfg.scene.unitree_go2.spawn.usd_path}")
+    go2_env_cfg.scene.unitree_go2.spawn.usd_path = "/home/juanda/Downloads/go2.usd"
     env, policy = go2_ctrl.get_rsl_rough_policy(go2_env_cfg)
 
     # Simulation environment

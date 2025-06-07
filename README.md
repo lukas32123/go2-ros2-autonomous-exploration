@@ -33,7 +33,7 @@ conda activate env_isaaclab
 
 **Step IV:** Clone this repo to your local directory.
 ```
-git clone https://github.com/jdgalviss/isaac-go2-ros2.git
+git clone https://github.com/Zhefan-Xu/isaac-go2-ros2.git
 ```
 
 ## Run Unitree Go2 Simulation 

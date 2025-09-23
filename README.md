@@ -5,7 +5,11 @@
 [![IsaacLab](https://img.shields.io/badge/IsaacLab-2.1.0-purple.svg)](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html)
 [![Linux platform](https://img.shields.io/badge/platform-Ubuntu--22.04-green.svg)](https://releases.ubuntu.com/22.04/)
 
-This fork supports isaac sim 4.5 and isaaclab 2.1.
+This branch supports isaac sim 4.5 and isaaclab 2.1.
+
+Please check ```isaacsim-4.2``` branch for isaac sim 4.2 version.
+
+Please check ```isaacsim-4.5-docker``` branch if you want to run inside a docker.
 
 Welcome to the Isaac Sim Unitree Go2 repository! This repository provides a Unitree Go2 quadruped robot simulation, leveraging the Isaac Sim/Isaac Lab framework and integrating seamlessly with a ROS 2 interface. It offers a flexible platform for testing navigation, decision-making, and other autonomous tasks in various scenarios.
 

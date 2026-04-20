@@ -45,6 +45,8 @@ class Go2SimCfg(InteractiveSceneCfg):
 
     # Go2 Robot
     unitree_go2: ArticulationCfg = UNITREE_GO2_CFG.replace(prim_path="{ENV_REGEX_NS}/Go2")
+    unitree_go2.init_state.pos = (5.0, 5.0, 0.4)
+    
     # Go2 foot contact sensor
     contact_forces = ContactSensorCfg(prim_path="{ENV_REGEX_NS}/Go2/.*_foot", history_length=3, track_air_time=True)
 

@@ -1,0 +1,35 @@
+slam_toolbox:
+  ros__parameters:
+    # Das Wichtigste: Die Kette muss stimmen!
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    scan_topic: /scan
+
+    # Modus: Wir wollen eine Live-Karte zeichnen
+    mode: mapping
+    max_laser_range: 10.0
+
+    # Wenn true, zickt SLAM rum, wenn mal ein Scan fehlt. Wir setzen es auf false!
+    use_scan_matching: true
+    use_scan_barycenter: true
+    minimum_travel_distance: 0.1
+    minimum_travel_heading: 0.1
+
+    # Die Queue (Warteschlange) massiv vergrößern, damit nichts mehr überläuft!
+    transform_timeout: 0.5
+    tf_buffer_duration: 10.0
+    scan_queue_size: 50
+    
+    # Toleranzen für den Simulator erhöhen
+    transform_publish_period: 0.05
+    map_update_interval: 0.5
+    resolution: 0.05
+    
+    # Solver-Einstellungen (Standard Ceres)
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_region_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: None

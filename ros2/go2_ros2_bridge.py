@@ -18,7 +18,7 @@ import time
 import go2.go2_ctrl as go2_ctrl
 
 ext_manager = omni.kit.app.get_app().get_extension_manager()
-ext_manager.set_extension_enabled_immediate("omni.isaac.ros2_bridge", True)
+ext_manager.set_extension_enabled_immediate("isaacsim.ros2.bridge", True)
 from isaacsim.ros2.bridge import collect_namespace, read_camera_info
 
 
@@ -27,9 +27,7 @@ class RobotDataManager(Node):
         super().__init__("robot_data_manager")
         self.cfg = cfg
         self.create_ros_time_graph()
-        sim_time_set = False
-        while (rclpy.ok() and sim_time_set==False):
-            sim_time_set = self.use_sim_time()
+        sim_time_set = True  # Disabled forcing sim_time to use wall time
 
         self.env = env
         self.num_envs = env.unwrapped.scene.num_envs
@@ -132,11 +130,6 @@ class RobotDataManager(Node):
         )
 
     def use_sim_time(self):
-        # Define the command as a list
-        command = ["ros2", "param", "set", "/robot_data_manager", "use_sim_time", "true"]
-
-        # Run the command in a non-blocking way
-        subprocess.Popen(command)  
         return True
 
     def create_static_transform(self):

@@ -1,0 +1,328 @@
+[INFO] [launch]: All log files can be found below /home/kilabor/.ros/log/2026-04-20-11-48-09-738148-kilabor-1300062-2110363-68508
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [controller_server-1]: process started with pid [68516]
+[INFO] [smoother_server-2]: process started with pid [68518]
+[INFO] [planner_server-3]: process started with pid [68520]
+[INFO] [behavior_server-4]: process started with pid [68522]
+[INFO] [bt_navigator-5]: process started with pid [68524]
+[INFO] [waypoint_follower-6]: process started with pid [68526]
+[INFO] [velocity_smoother-7]: process started with pid [68528]
+[INFO] [lifecycle_manager-8]: process started with pid [68530]
+[lifecycle_manager-8] [INFO] [1776678490.201609484] [lifecycle_manager_navigation]: Creating
+[velocity_smoother-7] [INFO] [1776678490.202521244] [velocity_smoother]: 
+[velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-8] [INFO] [1776678490.202743611] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bt_navigator-5] [INFO] [1776678490.203914403] [bt_navigator]: 
+[bt_navigator-5] 	bt_navigator lifecycle node launched. 
+[bt_navigator-5] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-5] [INFO] [1776678490.203959620] [bt_navigator]: Creating
+[smoother_server-2] [INFO] [1776678490.204450701] [smoother_server]: 
+[smoother_server-2] 	smoother_server lifecycle node launched. 
+[smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1776678490.204959294] [smoother_server]: Creating smoother server
+[controller_server-1] [INFO] [1776678490.205487099] [controller_server]: 
+[controller_server-1] 	controller_server lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-6] [INFO] [1776678490.205587725] [waypoint_follower]: 
+[waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-6] [INFO] [1776678490.205790983] [waypoint_follower]: Creating
+[controller_server-1] [INFO] [1776678490.207168825] [controller_server]: Creating controller server
+[planner_server-3] [INFO] [1776678490.208225708] [planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1776678490.208746195] [planner_server]: Creating
+[behavior_server-4] [INFO] [1776678490.210356934] [behavior_server]: 
+[behavior_server-4] 	behavior_server lifecycle node launched. 
+[behavior_server-4] 	Waiting on external lifecycle transitions to activate
+[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [INFO] [1776678490.217093768] [local_costmap.local_costmap]: 
+[controller_server-1] 	local_costmap lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1776678490.217225759] [global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1776678490.217341970] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-1] [INFO] [1776678490.217321217] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-8] [INFO] [1776678490.324479707] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-8] [INFO] [1776678490.324516458] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-1] [INFO] [1776678490.324739084] [controller_server]: Configuring controller interface
+[controller_server-1] [INFO] [1776678490.324842037] [controller_server]: getting goal checker plugins..
+[controller_server-1] [INFO] [1776678490.324888830] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-1] [INFO] [1776678490.324898364] [local_costmap.local_costmap]: Configuring
+[controller_server-1] [INFO] [1776678490.326830220] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-1] [INFO] [1776678490.327781929] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-1] [INFO] [1776678490.328972686] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-1] [INFO] [1776678490.328981478] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-1] [INFO] [1776678490.329209652] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-1] [INFO] [1776678490.332008933] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-1] [INFO] [1776678490.332230860] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-1] [INFO] [1776678490.332344731] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-1] [INFO] [1776678490.332918241] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-1] [INFO] [1776678490.333138219] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-1] [INFO] [1776678490.335814806] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-1] [INFO] [1776678490.335949436] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1776678490.335980974] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-1] [INFO] [1776678490.336102117] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1776678490.336129968] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-1] [INFO] [1776678490.336179622] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1776678490.336208658] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-1] [INFO] [1776678490.336295123] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1776678490.336323881] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-1] [INFO] [1776678490.336492694] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1776678490.336523504] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-1] [INFO] [1776678490.336587937] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1776678490.336619642] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-1] [INFO] [1776678490.336685781] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1776678490.336689749] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-8] [INFO] [1776678490.338684028] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-2] [INFO] [1776678490.338766579] [smoother_server]: Configuring smoother server
+[smoother_server-2] [INFO] [1776678490.342732606] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-2] [INFO] [1776678490.342934362] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-8] [INFO] [1776678490.345053666] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-3] [INFO] [1776678490.345134127] [planner_server]: Configuring
+[planner_server-3] [INFO] [1776678490.345154280] [global_costmap.global_costmap]: Configuring
+[planner_server-3] [INFO] [1776678490.347609819] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-3] [INFO] [1776678490.348894470] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-3] [INFO] [1776678490.349446496] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-3] [INFO] [1776678490.349457213] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-3] [INFO] [1776678490.349681185] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-3] [INFO] [1776678490.350896186] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-3] [INFO] [1776678490.350906904] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-3] [INFO] [1776678490.351701977] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-3] [INFO] [1776678490.355429781] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-3] [INFO] [1776678490.355444166] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1776678490.355696442] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-8] [INFO] [1776678490.358909872] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-4] [INFO] [1776678490.358984505] [behavior_server]: Configuring
+[planner_server-3] [INFO] [1776678490.359746834] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 369 X 358 at 0.050000 m/pix
+[behavior_server-4] [INFO] [1776678490.361921444] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-4] [INFO] [1776678490.362259582] [behavior_server]: Configuring spin
+[behavior_server-4] [INFO] [1776678490.363573532] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-4] [INFO] [1776678490.363891660] [behavior_server]: Configuring backup
+[behavior_server-4] [INFO] [1776678490.364888150] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-4] [INFO] [1776678490.365165558] [behavior_server]: Configuring drive_on_heading
+[behavior_server-4] [INFO] [1776678490.365961912] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-4] [INFO] [1776678490.366212183] [behavior_server]: Configuring wait
+[lifecycle_manager-8] [INFO] [1776678490.367314758] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-5] [INFO] [1776678490.367398041] [bt_navigator]: Configuring
+[lifecycle_manager-8] [INFO] [1776678490.388018571] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-6] [INFO] [1776678490.388090980] [waypoint_follower]: Configuring
+[waypoint_follower-6] [INFO] [1776678490.392285469] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[waypoint_follower-6] [INFO] [1776678490.392431289] [waypoint_follower]: Waypoint pause duration is set to zero, disabling task executor plugin.
+[lifecycle_manager-8] [INFO] [1776678490.392550394] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-7] [INFO] [1776678490.392622412] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-8] [INFO] [1776678490.393760527] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-1] [INFO] [1776678490.393821136] [controller_server]: Activating
+[controller_server-1] [INFO] [1776678490.393841004] [local_costmap.local_costmap]: Activating
+[controller_server-1] [INFO] [1776678490.393846371] [local_costmap.local_costmap]: Checking transform
+[controller_server-1] [INFO] [1776678490.393851776] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678490.893912307] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678491.393909762] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678491.893911936] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678492.393913497] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678492.894066427] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678493.393930110] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678493.893949643] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678494.394014612] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678494.893908539] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678495.394011125] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678495.894066226] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678496.393910350] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678496.893910073] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678497.393911987] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678497.893910567] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678498.394050063] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678498.893908901] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678499.393912662] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678499.893909036] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678500.394089077] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678500.894081712] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678501.393921420] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678501.893909395] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678502.393909790] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678502.893911202] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678503.393911060] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678503.893910146] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678504.393909169] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1776678504.893969398] [local_costmap.local_costmap]: start
+[controller_server-1] [INFO] [1776678505.094481025] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1776678505.197331537] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-8] [INFO] [1776678505.197358728] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-2] [INFO] [1776678505.197619782] [smoother_server]: Activating
+[smoother_server-2] [INFO] [1776678505.197639334] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1776678505.302003378] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-8] [INFO] [1776678505.302030306] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-3] [INFO] [1776678505.302270985] [planner_server]: Activating
+[planner_server-3] [INFO] [1776678505.302296141] [global_costmap.global_costmap]: Activating
+[planner_server-3] [INFO] [1776678505.302301754] [global_costmap.global_costmap]: Checking transform
+[planner_server-3] [INFO] [1776678505.302314270] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 1776678286.230193, but only time 1776678504.836481 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[planner_server-3] [INFO] [1776678505.802340240] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 1776678286.230193, but only time 1776678504.836481 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[planner_server-3] [INFO] [1776678506.302377851] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 1776678286.230193, but only time 1776678504.836481 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[planner_server-3] [INFO] [1776678506.802411614] [global_costmap.global_costmap]: start
+[planner_server-3] [INFO] [1776678507.302533224] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 0 X 0 at 0.050000 m/pix
+[planner_server-3] [WARN] [1776678507.302971366] [global_costmap.global_costmap]: Sensor origin at (4.98, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [INFO] [1776678507.352939333] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1776678507.353594796] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1776678507.455814518] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-8] [INFO] [1776678507.455865253] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-4] [INFO] [1776678507.456268261] [behavior_server]: Activating
+[behavior_server-4] [INFO] [1776678507.456290688] [behavior_server]: Activating spin
+[behavior_server-4] [INFO] [1776678507.456295158] [behavior_server]: Activating backup
+[behavior_server-4] [INFO] [1776678507.456298355] [behavior_server]: Activating drive_on_heading
+[behavior_server-4] [INFO] [1776678507.456301679] [behavior_server]: Activating wait
+[behavior_server-4] [INFO] [1776678507.456305889] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1776678507.558528295] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-8] [INFO] [1776678507.558558092] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-5] [INFO] [1776678507.558957152] [bt_navigator]: Activating
+[bt_navigator-5] [INFO] [1776678507.574180772] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1776678507.676299849] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-8] [INFO] [1776678507.676325591] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-6] [INFO] [1776678507.676614466] [waypoint_follower]: Activating
+[waypoint_follower-6] [INFO] [1776678507.676636092] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1776678507.779205940] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-8] [INFO] [1776678507.779240314] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-7] [INFO] [1776678507.779502004] [velocity_smoother]: Activating
+[velocity_smoother-7] [INFO] [1776678507.779530513] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[planner_server-3] [WARN] [1776678507.802497031] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678507.802530092] [global_costmap.global_costmap]: Sensor origin at (4.98, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[lifecycle_manager-8] [INFO] [1776678507.882376520] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-8] [INFO] [1776678507.882425536] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-8] [INFO] [1776678507.882435874] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[planner_server-3] [WARN] [1776678508.302740713] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678508.302787195] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678508.802683746] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678508.802715629] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678509.302495876] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678509.302521937] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678509.802493046] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678509.802515540] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678510.302499057] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678510.302522740] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678510.802499871] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678510.802521792] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678511.302489750] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678511.302510948] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678511.802498090] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678511.802518234] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678512.302491278] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678512.302512282] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678512.802534619] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678512.802566566] [global_costmap.global_costmap]: Sensor origin at (4.99, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678513.302492583] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678513.302513804] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678513.802493623] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678513.802514425] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678514.302488950] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678514.302509395] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678514.802507190] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678514.802537726] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678515.302590872] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678515.302620673] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678515.802634226] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678515.802656418] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678516.302502104] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678516.302531311] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678516.802492000] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678516.802512284] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678517.302494803] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678517.302514253] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678517.802489506] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678517.802510762] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678518.302495602] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678518.302514274] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678518.802507340] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678518.802538181] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678519.302627999] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678519.302655249] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678519.802500406] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678519.802521651] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678520.302492134] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678520.302515233] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678520.802494526] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678520.802517509] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678521.302499587] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678521.302520518] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678521.802495378] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678521.802515786] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678522.302495464] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678522.302525078] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678522.802499382] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678522.802555430] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678523.302490894] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678523.302513747] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678523.802489400] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678523.802512693] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678524.302488657] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678524.302509942] [global_costmap.global_costmap]: Sensor origin at (5.00, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678524.802495825] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [WARN] [1776678524.802519792] [global_costmap.global_costmap]: Sensor origin at (4.98, 5.00) is out of map bounds (5.00, 5.00) to (214748372.98, 214748372.98). The costmap cannot raytrace for it.
+[planner_server-3] [WARN] [1776678525.302489488] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[planner_server-3] [INFO] [1776678525.302509494] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 177 X 316 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678525.802493629] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 177 X 323 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678526.802491990] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 177 X 324 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678527.302490316] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 212 X 324 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678539.802497320] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 212 X 324 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678540.302494282] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 324 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678542.302489950] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 342 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678543.302493629] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 349 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678543.802503039] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 359 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678544.302496282] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 370 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678544.802496859] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 377 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678545.302495726] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 378 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678545.802500516] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 392 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678546.302490752] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 407 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678546.802495328] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 413 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678547.302441184] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 419 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678547.802496175] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 426 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678548.302495544] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 441 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678548.802495414] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 445 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678549.302492045] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 466 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678549.802494263] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 471 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678550.302492697] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 482 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678551.302441998] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 488 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678551.802491836] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 502 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678552.302493561] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 513 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678552.802501328] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 522 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678553.302494766] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 531 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678553.802492690] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 534 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678554.302492583] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 550 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678554.802494796] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 551 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678555.802493776] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 579 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678556.302493351] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 580 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678557.302446946] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 593 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678557.802492671] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 612 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678558.802495694] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 632 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678559.302493643] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 640 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678559.802495804] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 648 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678560.302493795] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 659 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678560.802497373] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 668 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678561.802496966] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 668 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678562.302489508] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 231 X 698 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678562.802496114] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 236 X 699 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678563.302498766] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 236 X 711 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678564.302493474] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 236 X 722 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678564.802491930] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 236 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678565.302490391] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 236 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678582.802497623] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 252 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678587.802494011] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 261 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678588.302492797] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 268 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678588.802496610] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 270 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678589.302491749] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 277 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678589.802494819] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 282 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678590.302495875] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 295 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678590.802445989] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 304 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678591.802495131] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 305 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678592.802493776] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 309 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678711.302497743] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 320 X 723 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678711.802495069] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 324 X 727 at 0.050000 m/pix
+[planner_server-3] [INFO] [1776678849.802500130] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 324 X 727 at 0.050000 m/pix

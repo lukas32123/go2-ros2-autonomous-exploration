@@ -35,7 +35,7 @@ class MasterBridge(Node):
         scan = LaserScan()
         # KNALLHARTER ECHTZEIT-STEMPEL (Nur vorwärts!)
         scan.header.stamp = msg.header.stamp
-        scan.header.frame_id = 'base_link'
+        scan.header.frame_id = 'lidar_frame'
         scan.angle_min = -math.pi
         scan.angle_max = math.pi
         scan.angle_increment = math.pi / 180.0

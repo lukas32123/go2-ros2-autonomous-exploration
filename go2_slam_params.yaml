@@ -8,7 +8,17 @@ slam_toolbox:
 
     # Modus: Wir wollen eine Live-Karte zeichnen
     mode: mapping
+
+    map_update_interval: 0.5
+
     max_laser_range: 10.0
+    transform_publish_period: 0.02
+    
+    # NEU 2: Gegen schräge Wände beim Drehen!
+    # Updatet die Karte schon, wenn der Roboter sich um nur 5 Grad (0.1 Radian) dreht, 
+    # anstatt zu warten, bis der Fehler zu groß wird.
+    minimum_travel_heading: 0.1
+    minimum_travel_distance: 0.1
 
     # Wenn true, zickt SLAM rum, wenn mal ein Scan fehlt. Wir setzen es auf false!
     use_scan_matching: true

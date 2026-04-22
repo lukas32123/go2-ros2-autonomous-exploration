@@ -1,8 +1,6 @@
-[INFO] [launch]: All log files can be found below /home/kilabor/.ros/log/2026-04-20-11-47-59-740865-kilabor-1300062-2110363-67990
+[INFO] [launch]: All log files can be found below /home/kilabor/.ros/log/2026-04-20-16-01-12-632699-kilabor-1300062-2110363-160622
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [async_slam_toolbox_node-1]: process started with pid [68044]
-[async_slam_toolbox_node-1] [INFO] [1776678479.794628509] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-[async_slam_toolbox_node-1] [INFO] [1776678479.794703876] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[INFO] [async_slam_toolbox_node-1]: process started with pid [160676]
+[async_slam_toolbox_node-1] [INFO] [1776693672.698424121] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-1] [INFO] [1776693672.698528982] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
 [async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar]
-[async_slam_toolbox_node-1] WARNING: Logging before InitGoogleLogging() is written to STDERR
-[async_slam_toolbox_node-1] W20260420 11:54:08.864305 68067 preprocessor.cc:68] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 24.  Bounding to maximum number available.

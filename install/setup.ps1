@@ -22,7 +22,7 @@ function _colcon_prefix_chain_powershell_source_script {
 }
 
 # source chained prefixes
-_colcon_prefix_chain_powershell_source_script "/home/kilabor/miniconda3/envs/env_isaaclab\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/kilabor/miniconda3/envs/env_go2_real\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)

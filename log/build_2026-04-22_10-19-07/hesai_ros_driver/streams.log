@@ -1,0 +1,105 @@
+[0.007s] Invoking command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake /home/kilabor/isaac-go2-ros2/src/HesaiLidar_ROS_2.0 -DCMAKE_INSTALL_PREFIX=/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver
+[0.036s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.036s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.036s]   CMake.
+[0.036s] 
+[0.036s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.036s]   to tell CMake that the project requires at least <min> but has been updated
+[0.036s]   to work with policies introduced by <max> or earlier.
+[0.036s] 
+[0.036s] [0m
+[0.104s] -- The C compiler identification is GNU 13.3.0
+[0.168s] -- The CXX compiler identification is GNU 13.3.0
+[0.178s] -- Detecting C compiler ABI info
+[0.222s] -- Detecting C compiler ABI info - done
+[0.231s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.231s] -- Detecting C compile features
+[0.232s] -- Detecting C compile features - done
+[0.240s] -- Detecting CXX compiler ABI info
+[0.282s] -- Detecting CXX compiler ABI info - done
+[0.292s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.292s] -- Detecting CXX compile features
+[0.293s] -- Detecting CXX compile features - done
+[0.298s] -- cuda not found!
+[0.298s] [0m=============================================================[0m
+[0.298s] [0m-- ROS_VERSION is 2[0m
+[0.298s] [0m=============================================================[0m
+[0.369s] -- Found Python3: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3 (found version "3.12.13") found components: Interpreter
+[0.512s] -- Found rosidl_generator_c: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_c/cmake)
+[0.518s] -- Found rosidl_adapter: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_adapter/cmake)
+[0.526s] -- Found rosidl_generator_cpp: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_cpp/cmake)
+[0.537s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.551s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.604s] -- Checking for module 'yaml-0.1'
+[0.640s] --   Found yaml-0.1, version 0.2.5
+[0.728s] -- Found rmw_implementation_cmake: 6.1.2 (/home/kilabor/miniconda3/envs/env_go2_real/share/rmw_implementation_cmake/cmake)
+[0.731s] -- Found rmw_fastrtps_cpp: 6.2.10 (/home/kilabor/miniconda3/envs/env_go2_real/share/rmw_fastrtps_cpp/cmake)
+[0.893s] -- Found OpenSSL: /home/kilabor/miniconda3/envs/env_go2_real/lib/libcrypto.so (found version "3.6.2")
+[0.915s] -- Found FastRTPS: /home/kilabor/miniconda3/envs/env_go2_real/include
+[0.942s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.951s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.995s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.995s] -- Found Threads: TRUE
+[1.043s] [0m=============================================================[0m
+[1.043s] [0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[1.043s] [0m=============================================================[0m
+[1.045s] -- Found sensor_msgs: 4.9.1 (/home/kilabor/miniconda3/envs/env_go2_real/share/sensor_msgs/cmake)
+[1.102s] -- Found rclcpp_action: 16.0.18 (/home/kilabor/miniconda3/envs/env_go2_real/share/rclcpp_action/cmake)
+[1.135s] -- Found rosidl_default_generators: 1.2.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_default_generators/cmake)
+[1.412s] -- Found ament_cmake_ros: 0.10.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_ros/cmake)
+[1.786s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.933s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.937s] -- Found python_cmake_module: 0.10.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake)
+[1.938s] [33mCMake Warning (dev) at /home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[1.938s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.938s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.938s]   the cmake_policy command to set the policy and suppress this warning.
+[1.938s] 
+[1.938s] Call Stack (most recent call first):
+[1.938s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+[1.938s]   /home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.938s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.938s]   CMakeLists.txt:139 (rosidl_generate_interfaces)
+[1.938s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.938s] [0m
+[1.946s] -- Found PythonInterp: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3 (found suitable version "3.12.13", minimum required is "3.6")
+[1.947s] [33mCMake Warning (dev) at /home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[1.947s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.947s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.947s]   the cmake_policy command to set the policy and suppress this warning.
+[1.947s] 
+[1.947s] Call Stack (most recent call first):
+[1.947s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+[1.947s]   /home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.947s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.947s]   CMakeLists.txt:139 (rosidl_generate_interfaces)
+[1.947s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.947s] [0m
+[1.950s] -- Found PythonLibs: /home/kilabor/miniconda3/envs/env_go2_real/lib/libpython3.12.so (found suitable version "3.12.13", minimum required is "3.5")
+[1.950s] -- Using PYTHON_EXECUTABLE: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3
+[1.950s] -- Using PYTHON_INCLUDE_DIRS: /home/kilabor/miniconda3/envs/env_go2_real/include/python3.12
+[1.950s] -- Using PYTHON_LIBRARIES: /home/kilabor/miniconda3/envs/env_go2_real/lib/libpython3.12.so
+[1.961s] -- Found PythonExtra: .so
+[2.695s] -- Found Python: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3.12 (found version "3.12.13") found components: Interpreter Development NumPy Development.Module Development.Embed
+[2.798s] [31mCMake Error at CMakeLists.txt:167 (add_subdirectory):
+[2.798s]   The source directory
+[2.798s] 
+[2.798s]     /home/kilabor/isaac-go2-ros2/src/HesaiLidar_ROS_2.0/src/driver/HesaiLidar_SDK_2.0
+[2.798s] 
+[2.798s]   does not contain a CMakeLists.txt file.
+[2.798s] 
+[2.798s] [0m
+[2.798s] [33mCMake Warning (dev) at CMakeLists.txt:173 (find_package):
+[2.798s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[2.798s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[2.798s]   set the policy and suppress this warning.
+[2.798s] 
+[2.798s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.798s] [0m
+[2.807s] -- Found Boost: /home/kilabor/miniconda3/envs/env_go2_real/lib/cmake/Boost-1.88.0/BoostConfig.cmake (found version "1.88.0") found components: thread
+[2.809s] [31mCMake Error at CMakeLists.txt:292 (install):
+[2.809s]   install TARGETS given target "hesai_sdk_lib" which does not exist.
+[2.809s] 
+[2.809s] [0m
+[2.814s] -- Configuring incomplete, errors occurred!
+[2.822s] Invoked command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver' returned '1': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake /home/kilabor/isaac-go2-ros2/src/HesaiLidar_ROS_2.0 -DCMAKE_INSTALL_PREFIX=/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver

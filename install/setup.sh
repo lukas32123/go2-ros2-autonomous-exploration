@@ -31,7 +31,7 @@ _colcon_prefix_chain_sh_source_script() {
 
 # source chained prefixes
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
-COLCON_CURRENT_PREFIX="/home/kilabor/miniconda3/envs/env_isaaclab"
+COLCON_CURRENT_PREFIX="/home/kilabor/miniconda3/envs/env_go2_real"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 

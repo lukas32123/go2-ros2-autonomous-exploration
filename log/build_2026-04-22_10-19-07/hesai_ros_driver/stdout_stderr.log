@@ -1,0 +1,103 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- cuda not found!
+[0m=============================================================[0m
+[0m-- ROS_VERSION is 2[0m
+[0m=============================================================[0m
+-- Found Python3: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3 (found version "3.12.13") found components: Interpreter
+-- Found rosidl_generator_c: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Checking for module 'yaml-0.1'
+--   Found yaml-0.1, version 0.2.5
+-- Found rmw_implementation_cmake: 6.1.2 (/home/kilabor/miniconda3/envs/env_go2_real/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/home/kilabor/miniconda3/envs/env_go2_real/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /home/kilabor/miniconda3/envs/env_go2_real/lib/libcrypto.so (found version "3.6.2")
+-- Found FastRTPS: /home/kilabor/miniconda3/envs/env_go2_real/include
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+[0m=============================================================[0m
+[0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[0m=============================================================[0m
+-- Found sensor_msgs: 4.9.1 (/home/kilabor/miniconda3/envs/env_go2_real/share/sensor_msgs/cmake)
+-- Found rclcpp_action: 16.0.18 (/home/kilabor/miniconda3/envs/env_go2_real/share/rclcpp_action/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake)
+[33mCMake Warning (dev) at /home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+  /home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:139 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found PythonInterp: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3 (found suitable version "3.12.13", minimum required is "3.6")
+[33mCMake Warning (dev) at /home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+  /home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:139 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found PythonLibs: /home/kilabor/miniconda3/envs/env_go2_real/lib/libpython3.12.so (found suitable version "3.12.13", minimum required is "3.5")
+-- Using PYTHON_EXECUTABLE: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /home/kilabor/miniconda3/envs/env_go2_real/include/python3.12
+-- Using PYTHON_LIBRARIES: /home/kilabor/miniconda3/envs/env_go2_real/lib/libpython3.12.so
+-- Found PythonExtra: .so
+-- Found Python: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3.12 (found version "3.12.13") found components: Interpreter Development NumPy Development.Module Development.Embed
+[31mCMake Error at CMakeLists.txt:167 (add_subdirectory):
+  The source directory
+
+    /home/kilabor/isaac-go2-ros2/src/HesaiLidar_ROS_2.0/src/driver/HesaiLidar_SDK_2.0
+
+  does not contain a CMakeLists.txt file.
+
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:173 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found Boost: /home/kilabor/miniconda3/envs/env_go2_real/lib/cmake/Boost-1.88.0/BoostConfig.cmake (found version "1.88.0") found components: thread
+[31mCMake Error at CMakeLists.txt:292 (install):
+  install TARGETS given target "hesai_sdk_lib" which does not exist.
+
+[0m
+-- Configuring incomplete, errors occurred!

@@ -1,0 +1,461 @@
+[0.004s] Invoking command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake /home/kilabor/isaac-go2-ros2/src/HesaiLidar_ROS_2.0 -DCMAKE_INSTALL_PREFIX=/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver
+[0.010s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.010s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.010s]   CMake.
+[0.010s] 
+[0.010s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.010s]   to tell CMake that the project requires at least <min> but has been updated
+[0.010s]   to work with policies introduced by <max> or earlier.
+[0.010s] 
+[0.010s] [0m
+[0.014s] [0m=============================================================[0m
+[0.014s] [0m-- ROS_VERSION is 2[0m
+[0.014s] [0m=============================================================[0m
+[0.014s] -- cuda not found!
+[0.145s] -- Found rosidl_generator_c: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_c/cmake)
+[0.146s] -- Found rosidl_adapter: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_adapter/cmake)
+[0.150s] -- Found rosidl_generator_cpp: 3.1.8 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_cpp/cmake)
+[0.157s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.166s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.206s] -- Found rmw_implementation_cmake: 6.1.2 (/home/kilabor/miniconda3/envs/env_go2_real/share/rmw_implementation_cmake/cmake)
+[0.206s] -- Found rmw_fastrtps_cpp: 6.2.10 (/home/kilabor/miniconda3/envs/env_go2_real/share/rmw_fastrtps_cpp/cmake)
+[0.276s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.314s] [0m=============================================================[0m
+[0.314s] [0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[0.314s] [0m=============================================================[0m
+[0.314s] -- Found sensor_msgs: 4.9.1 (/home/kilabor/miniconda3/envs/env_go2_real/share/sensor_msgs/cmake)
+[0.344s] -- Found rclcpp_action: 16.0.18 (/home/kilabor/miniconda3/envs/env_go2_real/share/rclcpp_action/cmake)
+[0.365s] -- Found rosidl_default_generators: 1.2.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_default_generators/cmake)
+[0.608s] -- Found ament_cmake_ros: 0.10.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_ros/cmake)
+[0.974s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.123s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.124s] -- Found python_cmake_module: 0.10.0 (/home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake)
+[1.124s] [33mCMake Warning (dev) at /home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[1.124s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.125s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.125s]   the cmake_policy command to set the policy and suppress this warning.
+[1.125s] 
+[1.125s] Call Stack (most recent call first):
+[1.125s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+[1.125s]   /home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.125s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.125s]   CMakeLists.txt:139 (rosidl_generate_interfaces)
+[1.125s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.125s] [0m
+[1.133s] [33mCMake Warning (dev) at /home/kilabor/miniconda3/envs/env_go2_real/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[1.133s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.133s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.133s]   the cmake_policy command to set the policy and suppress this warning.
+[1.133s] 
+[1.133s] Call Stack (most recent call first):
+[1.133s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+[1.133s]   /home/kilabor/miniconda3/envs/env_go2_real/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.133s]   /home/kilabor/miniconda3/envs/env_go2_real/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.133s]   CMakeLists.txt:139 (rosidl_generate_interfaces)
+[1.133s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.134s] [0m
+[1.134s] -- Using PYTHON_EXECUTABLE: /home/kilabor/miniconda3/envs/env_go2_real/bin/python3
+[1.134s] -- Using PYTHON_INCLUDE_DIRS: /home/kilabor/miniconda3/envs/env_go2_real/include/python3.12
+[1.134s] -- Using PYTHON_LIBRARIES: /home/kilabor/miniconda3/envs/env_go2_real/lib/libpython3.12.so
+[1.361s] [0mCMake Deprecation Warning at src/driver/HesaiLidar_SDK_2.0/CMakeLists.txt:1 (cmake_minimum_required):
+[1.362s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.362s]   CMake.
+[1.362s] 
+[1.362s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.362s]   to tell CMake that the project requires at least <min> but has been updated
+[1.362s]   to work with policies introduced by <max> or earlier.
+[1.362s] 
+[1.362s] [0m
+[1.362s] [0mCMake Deprecation Warning at src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeLists.txt:5 (cmake_minimum_required):
+[1.362s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.362s]   CMake.
+[1.362s] 
+[1.362s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.362s]   to tell CMake that the project requires at least <min> but has been updated
+[1.362s]   to work with policies introduced by <max> or earlier.
+[1.363s] 
+[1.363s] [0m
+[1.373s] [33mCMake Warning (dev) at CMakeLists.txt:173 (find_package):
+[1.373s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.373s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.373s]   set the policy and suppress this warning.
+[1.373s] 
+[1.374s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.374s] [0m
+[1.382s] -- Configuring done (1.4s)
+[1.421s] -- Generating done (0.0s)
+[1.444s] -- Build files have been written to: /home/kilabor/isaac-go2-ros2/build/hesai_ros_driver
+[1.450s] Invoked command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake /home/kilabor/isaac-go2-ros2/src/HesaiLidar_ROS_2.0 -DCMAKE_INSTALL_PREFIX=/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver
+[1.451s] Invoking command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake --build /home/kilabor/isaac-go2-ros2/build/hesai_ros_driver -- -j24 -l24
+[1.469s] [  1%] [1m[34mGenerating C code for ROS interfaces[0m
+[1.472s] [  2%] [1m[34mGenerating Rust code for ROS interfaces[0m
+[1.473s] [  3%] [1m[34mGenerating C++ code for ROS interfaces[0m
+[1.473s] [  4%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/log_lib.dir/Logger/src/logger.cc.o[0m
+[1.475s] [  4%] Built target ament_cmake_python_copy_hesai_ros_driver
+[1.568s] running egg_info
+[1.571s] creating hesai_ros_driver.egg-info
+[1.571s] writing hesai_ros_driver.egg-info/PKG-INFO
+[1.571s] writing dependency_links to hesai_ros_driver.egg-info/dependency_links.txt
+[1.571s] writing top-level names to hesai_ros_driver.egg-info/top_level.txt
+[1.571s] writing manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[1.582s] reading manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[1.582s] writing manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[1.590s] [  4%] Built target hesai_ros_driver__rs
+[1.595s] [  4%] Built target ament_cmake_python_build_hesai_ros_driver_egg
+[1.634s] [  4%] Built target hesai_ros_driver__cpp
+[1.637s] [  5%] [1m[34mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.637s] [  6%] [1m[34mGenerating C++ introspection for ROS interfaces[0m
+[1.638s] [  7%] [1m[34mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.640s] [  8%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/udp_packet__functions.c.o[0m
+[1.640s] [  9%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/udp_frame__functions.c.o[0m
+[1.641s] [ 10%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/ptp__functions.c.o[0m
+[1.641s] [ 12%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/loss_packet__functions.c.o[0m
+[1.641s] [ 12%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/firetime__functions.c.o[0m
+[1.697s] [ 13%] [1m[32mLinking C shared library libhesai_ros_driver__rosidl_generator_c.so[0m
+[1.716s] [ 13%] Built target hesai_ros_driver__rosidl_generator_c
+[1.721s] [ 16%] [1m[34mGenerating C type support dispatch for ROS interfaces[0m
+[1.721s] [ 16%] [1m[34mGenerating C type support for eProsima Fast-RTPS[0m
+[1.721s] [ 16%] [1m[34mGenerating C introspection for ROS interfaces[0m
+[1.747s] [ 17%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/udp_packet__type_support.cpp.o[0m
+[1.747s] [ 20%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/firetime__type_support.cpp.o[0m
+[1.747s] [ 20%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/udp_frame__type_support.cpp.o[0m
+[1.747s] [ 22%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/ptp__type_support.cpp.o[0m
+[1.747s] [ 22%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/loss_packet__type_support.cpp.o[0m
+[1.767s] [ 27%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/loss_packet__type_support.cpp.o[0m
+[1.767s] [ 27%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/ptp__type_support.cpp.o[0m
+[1.767s] [ 27%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/udp_packet__type_support.cpp.o[0m
+[1.767s] [ 27%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/firetime__type_support.cpp.o[0m
+[1.767s] [ 27%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/udp_frame__type_support.cpp.o[0m
+[1.773s] [ 28%] [1m[32mLinking CXX shared library liblog_lib.so[0m
+[1.776s] [ 29%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/udp_frame__type_support.cpp.o[0m
+[1.776s] [ 30%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/ptp__type_support.cpp.o[0m
+[1.776s] [ 31%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/udp_packet__type_support.cpp.o[0m
+[1.776s] [ 32%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/firetime__type_support.cpp.o[0m
+[1.776s] [ 33%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/loss_packet__type_support.cpp.o[0m
+[1.811s] [ 33%] Built target log_lib
+[1.820s] [ 35%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/platutils_lib.dir/Common/src/auto_tick_count.cc.o[0m
+[1.820s] [ 35%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/platutils_lib.dir/Common/src/plat_utils.cc.o[0m
+[1.841s] [ 40%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/loss_packet__type_support.cpp.o[0m
+[1.841s] [ 40%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/udp_frame__type_support.cpp.o[0m
+[1.841s] [ 40%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/udp_packet__type_support.cpp.o[0m
+[1.842s] [ 41%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/firetime__type_support.cpp.o[0m
+[1.842s] [ 40%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/ptp__type_support.cpp.o[0m
+[1.860s] [ 42%] [1m[32mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_c.so[0m
+[1.873s] [ 43%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/udp_packet__type_support_c.cpp.o[0m
+[1.873s] [ 44%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/ptp__type_support_c.cpp.o[0m
+[1.873s] [ 45%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/udp_frame__type_support_c.cpp.o[0m
+[1.873s] [ 46%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/firetime__type_support_c.cpp.o[0m
+[1.874s] [ 47%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/udp_packet__type_support.c.o[0m
+[1.875s] [ 48%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/loss_packet__type_support_c.cpp.o[0m
+[1.881s] [ 48%] Built target hesai_ros_driver__rosidl_typesupport_c
+[1.889s] [ 49%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/udp_frame__type_support.c.o[0m
+[1.905s] [ 51%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/firetime__type_support.c.o[0m
+[1.905s] [ 51%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/ptp__type_support.c.o[0m
+[1.906s] [ 52%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/loss_packet__type_support.c.o[0m
+[1.922s] [ 53%] [1m[32mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_cpp.so[0m
+[1.929s] [ 54%] [1m[32mLinking C shared library libhesai_ros_driver__rosidl_typesupport_introspection_c.so[0m
+[1.943s] [ 54%] Built target hesai_ros_driver__rosidl_typesupport_cpp
+[1.946s] [ 54%] Built target hesai_ros_driver__rosidl_typesupport_introspection_c
+[1.961s] [ 55%] [1m[32mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so[0m
+[2.000s] [ 55%] Built target hesai_ros_driver__rosidl_typesupport_introspection_cpp
+[2.015s] [ 56%] [1m[32mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.055s] [ 56%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_cpp
+[2.058s] [ 57%] [1m[32mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so[0m
+[2.097s] [ 57%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_c
+[2.104s] [ 57%] Built target hesai_ros_driver
+[2.112s] [ 58%] [1m[34mGenerating Python code for ROS interfaces[0m
+[2.313s] [ 58%] Built target hesai_ros_driver__py
+[2.315s] [ 60%] [1m[32mLinking CXX shared library libplatutils_lib.so[0m
+[2.321s] [ 61%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_udp_packet_s.c.o[0m
+[2.322s] [ 62%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_udp_frame_s.c.o[0m
+[2.322s] [ 63%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_firetime_s.c.o[0m
+[2.322s] [ 65%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_loss_packet_s.c.o[0m
+[2.322s] [ 65%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_ptp_s.c.o[0m
+[2.352s] [ 65%] Built target platutils_lib
+[2.361s] [ 66%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/UdpParser/udp_parser.cc.o[0m
+[2.361s] [ 67%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/ptc_client.cc.o[0m
+[2.361s] [ 68%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_client.cc.o[0m
+[2.361s] [ 69%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_1_0_parser.cc.o[0m
+[2.361s] [ 70%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/general_ptc_parser.cc.o[0m
+[2.361s] [ 71%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/ptc_parser.cc.o[0m
+[2.361s] [ 73%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/source.cc.o[0m
+[2.361s] [ 73%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_2_0_parser.cc.o[0m
+[2.361s] [ 74%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_ssl_client.cc.o[0m
+[2.362s] [ 76%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_source.cc.o[0m
+[2.362s] [ 76%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/serial_source.cc.o[0m
+[2.362s] [ 77%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/tcp_source.cc.o[0m
+[2.363s] [ 78%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/socket_source.cc.o[0m
+[2.364s] [ 80%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_saver.cc.o[0m
+[2.428s] [ 81%] [1m[32mLinking C shared library rosidl_generator_py/hesai_ros_driver/libhesai_ros_driver__rosidl_generator_py.so[0m
+[2.450s] [ 81%] Built target hesai_ros_driver__rosidl_generator_py
+[2.460s] [ 84%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.460s] [ 84%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.460s] [ 84%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_c.c.o[0m
+[2.546s] [ 85%] [1m[32mLinking C shared module rosidl_generator_py/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-312-x86_64-linux-gnu.so[0m
+[2.555s] [ 86%] [1m[32mLinking C shared module rosidl_generator_py/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-312-x86_64-linux-gnu.so[0m
+[2.555s] [ 87%] [1m[32mLinking C shared module rosidl_generator_py/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-312-x86_64-linux-gnu.so[0m
+[2.561s] [ 87%] Built target hesai_ros_driver__rosidl_typesupport_c__pyext
+[2.571s] [ 87%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_c__pyext
+[2.571s] [ 87%] Built target hesai_ros_driver__rosidl_typesupport_introspection_c__pyext
+[2.658s] [ 88%] [1m[32mLinking CXX shared library libudpParser_lib.so[0m
+[2.690s] [ 88%] Built target udpParser_lib
+[2.831s] [ 89%] [1m[32mLinking CXX shared library libsource_lib.so[0m
+[2.868s] [ 89%] Built target source_lib
+[2.876s] [ 90%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/serialClient_lib.dir/SerialClient/src/serial_client.cc.o[0m
+[3.247s] [ 91%] [1m[32mLinking CXX shared library libptcClient_lib.so[0m
+[3.307s] [ 91%] Built target ptcClient_lib
+[3.471s] [ 92%] [1m[32mLinking CXX shared library libserialClient_lib.so[0m
+[3.507s] [ 92%] Built target serialClient_lib
+[3.514s] [ 93%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/lidar_lib.dir/Lidar/lidar.cc.o[0m
+[3.886s] [ 94%] [1m[32mLinking CXX shared library liblidar_lib.so[0m
+[3.921s] [ 94%] Built target lidar_lib
+[3.929s] [ 95%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/CMakeFiles/hesai_sdk_lib.dir/driver/hesai_lidar_sdk.cc.o[0m
+[4.299s] [ 96%] [1m[32mLinking CXX shared library libhesai_sdk_lib.so[0m
+[4.333s] [ 96%] Built target hesai_sdk_lib
+[4.341s] [ 97%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver_node.dir/node/hesai_ros_driver_node.cc.o[0m
+[4.341s] [ 98%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver_node.dir/src/manager/node_manager.cc.o[0m
+[15.989s] [100%] [1m[32mLinking CXX executable hesai_ros_driver_node[0m
+[16.131s] [100%] Built target hesai_ros_driver_node
+[16.137s] Invoked command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake --build /home/kilabor/isaac-go2-ros2/build/hesai_ros_driver -- -j24 -l24
+[16.141s] Invoking command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake --install /home/kilabor/isaac-go2-ros2/build/hesai_ros_driver
+[16.144s] -- Install configuration: "Release"
+[16.144s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/ament_index/resource_index/rosidl_interfaces/hesai_ros_driver
+[16.144s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver
+[16.144s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg
+[16.144s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_frame.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/loss_packet.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_packet.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/firetime.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__struct.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__functions.c
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__functions.c
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__functions.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__functions.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__functions.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__struct.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__functions.c
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__struct.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__functions.c
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__functions.c
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__struct.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__functions.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__struct.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__functions.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/ptp.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_generator_c__visibility_control.h
+[16.145s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_c.so
+[16.146s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_c.so" to ""
+[16.146s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver
+[16.146s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.146s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_fastrtps_c.h
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_fastrtps_c.h
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_fastrtps_c.h
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_fastrtps_c.h
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_fastrtps_c.h
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so
+[16.146s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so" to ""
+[16.146s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver
+[16.146s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/loss_packet.hpp
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_packet.hpp
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/ptp.hpp
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_frame.hpp
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_generator_cpp__visibility_control.hpp
+[16.146s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail
+[16.146s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__traits.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__builder.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__struct.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__builder.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__struct.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__struct.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__builder.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__traits.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__struct.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__traits.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__builder.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__struct.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__traits.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__builder.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__traits.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/firetime.hpp
+[16.147s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver
+[16.147s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg
+[16.147s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_fastrtps_cpp.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_fastrtps_cpp.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_fastrtps_cpp.hpp
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/dds_fastrtps
+[16.147s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so
+[16.148s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so" to ""
+[16.148s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver
+[16.148s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[16.148s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_introspection_c.h
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.c
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.c
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_introspection_c.h
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_introspection_c.h
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.c
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_introspection_c.h
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.c
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_introspection_c.h
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.c
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_c.so
+[16.148s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_c.so" to ""
+[16.148s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_c.so
+[16.148s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_c.so" to ""
+[16.148s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver
+[16.149s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg
+[16.149s] -- Up-to-date: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_introspection_cpp.hpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_introspection_cpp.hpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_introspection_cpp.hpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.cpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.cpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_introspection_cpp.hpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.cpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.cpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_introspection_cpp.hpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.cpp
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so
+[16.149s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so" to ""
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_cpp.so
+[16.149s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_cpp.so" to ""
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/environment/pythonpath.sh
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/environment/pythonpath.dsv
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver-1.5.0-py3.12.egg-info
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver-1.5.0-py3.12.egg-info/dependency_links.txt
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver-1.5.0-py3.12.egg-info/PKG-INFO
+[16.149s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver-1.5.0-py3.12.egg-info/top_level.txt
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver-1.5.0-py3.12.egg-info/SOURCES.txt
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-312-x86_64-linux-gnu.so
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-312-x86_64-linux-gnu.so
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-312-x86_64-linux-gnu.so
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/__init__.py
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_c.c
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_introspection_c.c
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_udp_packet_s.c
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_firetime.py
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_udp_frame_s.c
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_ptp.py
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_loss_packet.py
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_firetime_s.c
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_udp_packet.py
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_udp_frame.py
+[16.150s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/__init__.py
+[16.151s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_loss_packet_s.c
+[16.151s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/msg/_ptp_s.c
+[16.151s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/libhesai_ros_driver__rosidl_generator_py.so
+[16.169s] Listing 'lib/python3.12/site-packages/hesai_ros_driver'...
+[16.169s] Can't list 'lib/python3.12/site-packages/hesai_ros_driver'
+[16.171s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-312-x86_64-linux-gnu.so
+[16.172s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-312-x86_64-linux-gnu.so" to ""
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-312-x86_64-linux-gnu.so
+[16.172s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-312-x86_64-linux-gnu.so" to ""
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-312-x86_64-linux-gnu.so
+[16.172s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/python3.12/site-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-312-x86_64-linux-gnu.so" to ""
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_py.so
+[16.172s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_py.so" to ""
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/ament_index/resource_index/rust_packages/hesai_ros_driver
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust/Cargo.toml
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust/build.rs
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust/src
+[16.172s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust/src/lib.rs
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust/src/msg.rs
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust/src/msg
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rust/src/msg/rmw.rs
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg/UdpPacket.idl
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg/UdpFrame.idl
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg/Firetime.idl
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg/Ptp.idl
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg/LossPacket.idl
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/UdpPacket.msg
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/UdpFrame.msg
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/Firetime.msg
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/Ptp.msg
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/LossPacket.msg
+[16.173s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/hesai_ros_driver/hesai_ros_driver_node
+[16.174s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/hesai_ros_driver/hesai_ros_driver_node" to ""
+[16.174s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_sdk_lib.so
+[16.174s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libhesai_sdk_lib.so" to ""
+[16.174s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/liblog_lib.so
+[16.174s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/liblidar_lib.so
+[16.174s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/liblidar_lib.so" to ""
+[16.174s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libptcClient_lib.so
+[16.174s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libptcClient_lib.so" to ""
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libsource_lib.so
+[16.175s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libsource_lib.so" to ""
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libplatutils_lib.so
+[16.175s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libplatutils_lib.so" to ""
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libserialClient_lib.so
+[16.175s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libserialClient_lib.so" to ""
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libudpParser_lib.so
+[16.175s] -- Set non-toolchain portion of runtime path of "/home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/lib/libudpParser_lib.so" to ""
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/launch
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/launch/start.launch
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/launch/start.py
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/launch/dashing_start.py
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rviz
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rviz/rviz.rviz
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/rviz/rviz2.rviz
+[16.175s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/ament_index/resource_index/package_run_dependencies/hesai_ros_driver
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/ament_index/resource_index/parent_prefix_path/hesai_ros_driver
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/environment/ament_prefix_path.sh
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/environment/ament_prefix_path.dsv
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/environment/path.sh
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/environment/path.dsv
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.bash
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.sh
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.zsh
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.dsv
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/package.dsv
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/ament_index/resource_index/packages/hesai_ros_driver
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cExport.cmake
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cExport-release.cmake
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cExport.cmake
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cExport-release.cmake
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cppExport.cmake
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cppExport.cmake
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[16.176s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cExport.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cExport-release.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cExport.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cExport-release.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cppExport.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cppExport-release.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cppExport.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cppExport-release.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_pyExport.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_pyExport-release.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake-extras.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_targets-extras.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driverConfig.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driverConfig-version.cmake
+[16.177s] -- Installing: /home/kilabor/isaac-go2-ros2/install/hesai_ros_driver/share/hesai_ros_driver/package.xml
+[16.179s] Invoked command in '/home/kilabor/isaac-go2-ros2/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/kilabor/miniconda3/envs/env_go2_real CONDA_PROMPT_MODIFIER=(env_go2_real) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/kilabor/miniconda3/envs/env_go2_real/bin/cmake --install /home/kilabor/isaac-go2-ros2/build/hesai_ros_driver

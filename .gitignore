@@ -1,2 +1,21 @@
-__pycache__
-outputs
+# Python
+__pycache__/
+*.pyc
+
+# Training / Simulation
+outputs/
+
+# ROS2 colcon workspaces
+build/
+install/
+log/
+
+# IDEs und Editoren
+.vscode/
+.idea/
+*.swp
+*~
+
+# C++ / Kompilierte Dateien
+*.o
+*.so

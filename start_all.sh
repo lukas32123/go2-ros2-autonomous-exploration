@@ -39,7 +39,7 @@ start_process() {
   local cmd="$1"
   local log="$2"
   echo "Starting: $cmd"
-  bash -lc "$cmd" > "$log" 2>&1 &
+  bash -c "$cmd" > "$log" 2>&1 &
   echo "  -> log: $log"
 }
 

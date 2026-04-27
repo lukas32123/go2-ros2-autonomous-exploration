@@ -7,6 +7,7 @@ from geometry_msgs.msg import TransformStamped
 from rclpy.qos import qos_profile_sensor_data
 import numpy as np
 import math
+import sensor_msgs_py.point_cloud2 as pc2
 
 class MasterBridge(Node):
     def __init__(self):
@@ -20,7 +21,7 @@ class MasterBridge(Node):
     def odom_cb(self, msg):
         t = TransformStamped()
         # KNALLHARTER ECHTZEIT-STEMPEL (Nur vorwärts!)
-        t.header.stamp = msg.header.stamp
+        t.header.stamp = self.get_clock().now().to_msg()
         t.header.frame_id = 'odom'
         t.child_frame_id = 'base_link'
         t.transform.translation.x = msg.pose.pose.position.x
@@ -34,7 +35,7 @@ class MasterBridge(Node):
     def pc_cb(self, msg):
         scan = LaserScan()
         # KNALLHARTER ECHTZEIT-STEMPEL (Nur vorwärts!)
-        scan.header.stamp = msg.header.stamp
+        scan.header.stamp = self.get_clock().now().to_msg()
         scan.header.frame_id = 'lidar_frame'
         scan.angle_min = -math.pi
         scan.angle_max = math.pi
@@ -45,10 +46,19 @@ class MasterBridge(Node):
         scan.range_max = 30.0
         num_rays = int((scan.angle_max - scan.angle_min) / scan.angle_increment)
         try:
-            raw_data = np.frombuffer(msg.data, dtype=np.uint8).reshape(-1, msg.point_step)
-            xyz = raw_data[:, 0:12].copy().view(dtype=np.float32)
-        except Exception: return
-        x = xyz[:, 0]; y = xyz[:, 1]; z = xyz[:, 2]
+            cloud_data = list(pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True))
+            if not cloud_data:
+                return
+            
+            # DER KUGELSICHERE WEG: Tuples manuell entpacken
+            xyz = np.array([[p[0], p[1], p[2]] for p in cloud_data], dtype=np.float32)
+            
+            x = xyz[:, 0]
+            y = xyz[:, 1]
+            z = xyz[:, 2]
+        except Exception as e:
+            self.get_logger().error(f"Lidar-Crash: {e}")
+            return
         mask = (z > 0.05) & (z < 0.15)
         x = x[mask]; y = y[mask]
         r = np.hypot(x, y)

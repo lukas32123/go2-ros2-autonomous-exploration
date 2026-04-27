@@ -45,13 +45,12 @@ start_process() {
 
 start_process "cd '$SCRIPT_DIR' && ./start_isaac.sh" "$LOG_DIR/start_isaac.log"
 start_process "cd '$SCRIPT_DIR' && python master_bridge.py" "$LOG_DIR/master_bridge.log"
-start_process "cd '$SCRIPT_DIR' && ros2 launch slam_toolbox online_async_launch.py slam_params_file:='$SCRIPT_DIR/go2_slam_params.yaml'" "$LOG_DIR/slam_toolbox.log"
-
+start_process "cd '$SCRIPT_DIR' && python3 lidar_tf.py" "$LOG_DIR/lidar_tf.log"
+start_process "cd '$SCRIPT_DIR' && ros2 launch slam_toolbox online_async_launch.py slam_params_file:='$SCRIPT_DIR/go2_slam_params.yaml' use_sim_time:=False" "$LOG_DIR/slam_toolbox.log"
 echo "Warte 10 Sekunden auf Isaac Sim..."
 sleep 10
 
-start_process "cd '$SCRIPT_DIR' && ros2 launch nav2_bringup navigation_launch.py params_file:='$SCRIPT_DIR/nav2_params.yaml'" "$LOG_DIR/nav2.log"
-
+start_process "cd '$SCRIPT_DIR' && ros2 launch nav2_bringup navigation_launch.py params_file:='$SCRIPT_DIR/nav2_params.yaml' use_sim_time:=False" "$LOG_DIR/nav2.log"
 echo
 cat <<EOF
 All processes have been started in the background.

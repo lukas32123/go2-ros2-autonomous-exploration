@@ -1,6 +1,5 @@
-[INFO] [launch]: All log files can be found below /home/kilabor/.ros/log/2026-04-27-09-02-39-645396-kilabor-1300062-2110363-36509
+[INFO] [launch]: All log files can be found below /home/kilabor/.ros/log/2026-04-29-09-30-39-439268-kilabor-1300062-2110363-13832
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [async_slam_toolbox_node-1]: process started with pid [36578]
-[async_slam_toolbox_node-1] [INFO] [1777273359.752121103] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
-[async_slam_toolbox_node-1] [INFO] [1777273359.755672840] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
-[async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar]
+[INFO] [async_slam_toolbox_node-1]: process started with pid [13934]
+[async_slam_toolbox_node-1] [INFO] [1777447839.498382183] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-1] [INFO] [1777447839.498869171] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.

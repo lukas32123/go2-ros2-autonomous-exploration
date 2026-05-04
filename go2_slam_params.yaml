@@ -1,45 +1,25 @@
 slam_toolbox:
   ros__parameters:
-    # Das Wichtigste: Die Kette muss stimmen!
     odom_frame: odom
     map_frame: map
-    base_frame: base_link
+    base_frame: unitree_go2/base_link
     scan_topic: /scan
-
-    # Modus: Wir wollen eine Live-Karte zeichnen
     mode: mapping
 
-    map_update_interval: 0.5
-
-    max_laser_range: 10.0
-    transform_publish_period: 0.02
+    # RADIKALE RAM-SPAR-EINSTELLUNGEN
+    transform_timeout: 0.1         # Warte maximal 0.1s auf TF, dann wegwerfen!
+    tf_buffer_duration: 2.0        # Halte nur 2s TF-Historie vor
+    minimum_time_interval: 0.2     # Nur alle 0.2s einen Scan verarbeiten (statt 17Hz)
     
-    # NEU 2: Gegen schräge Wände beim Drehen!
-    # Updatet die Karte schon, wenn der Roboter sich um nur 5 Grad (0.1 Radian) dreht, 
-    # anstatt zu warten, bis der Fehler zu groß wird.
-    minimum_travel_heading: 0.1
-    minimum_travel_distance: 0.1
-
-    # Wenn true, zickt SLAM rum, wenn mal ein Scan fehlt. Wir setzen es auf false!
-    use_scan_matching: true
-    use_scan_barycenter: true
-    minimum_travel_distance: 0.1
-    minimum_travel_heading: 0.1
-
-    # Die Queue (Warteschlange) massiv vergrößern, damit nichts mehr überläuft!
-    transform_timeout: 0.5
-    tf_buffer_duration: 10.0
-    scan_queue_size: 50
+    # Nachrichtenschlange begrenzen
+    scan_buffer_size: 5            # Maximal 5 Scans zwischenspeichern
+    scan_buffer_maximum_value: 20  # Absolute Obergrenze
     
-    # Toleranzen für den Simulator erhöhen
-    transform_publish_period: 0.05
-    map_update_interval: 0.5
-    resolution: 0.05
+    resolution: 0.05               # 5cm Pixel sind genug
+    max_laser_range: 15.0          # Ignoriere alles, was weiter als 15m weg ist
     
-    # Solver-Einstellungen (Standard Ceres)
     solver_plugin: solver_plugins::CeresSolver
     ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
     ceres_preconditioner: SCHUR_JACOBI
     ceres_trust_region_strategy: LEVENBERG_MARQUARDT
-    ceres_dogleg_type: TRADITIONAL_DOGLEG
     ceres_loss_function: None

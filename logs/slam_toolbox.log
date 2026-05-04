@@ -3,3 +3,4 @@
 [INFO] [async_slam_toolbox_node-1]: process started with pid [13934]
 [async_slam_toolbox_node-1] [INFO] [1777447839.498382183] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
 [async_slam_toolbox_node-1] [INFO] [1777447839.498869171] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[ERROR] [async_slam_toolbox_node-1]: process has died [pid 13934, exit code -9, cmd '/home/kilabor/miniconda3/envs/env_isaaclab/lib/slam_toolbox/async_slam_toolbox_node --ros-args -r __node:=slam_toolbox --params-file /home/kilabor/isaac-go2-ros2/go2_slam_params.yaml --params-file /tmp/launch_params_83pup39z'].

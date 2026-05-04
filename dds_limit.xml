@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastrtps_profiles">
+    <data_writer profile_name="default_datawriter_profile" is_default_profile="true">
+        <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
+    </data_writer>
+
+    <data_reader profile_name="default_datareader_profile" is_default_profile="true">
+        <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
+    </data_reader>
+
+    <topic profile_name="default_topic_profile" is_default_profile="true">
+        <historyQos>
+            <kind>KEEP_LAST</kind>
+            <depth>1</depth>
+        </historyQos>
+    </topic>
+</profiles>

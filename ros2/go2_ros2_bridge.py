@@ -100,7 +100,7 @@ class RobotDataManager(Node):
         self.lidar_freq = 15.0
         self.odom_pose_pub_time = time.time()
         self.lidar_pub_time = time.time() 
-        self.create_static_transform()
+        #self.create_static_transform()
         self.create_camera_publisher()  
 
  
@@ -202,7 +202,7 @@ class RobotDataManager(Node):
     def publish_odom(self, base_pos, base_rot, base_lin_vel_b, base_ang_vel_b, env_idx):
         odom_msg = Odometry()
         odom_msg.header.stamp = self.get_clock().now().to_msg()
-        odom_msg.header.frame_id = "map"
+        odom_msg.header.frame_id = "odom"
         if (self.num_envs == 1):
             odom_msg.child_frame_id = "base_link"
         else:
@@ -223,21 +223,21 @@ class RobotDataManager(Node):
         self.odom_pub[env_idx].publish(odom_msg)
 
         # transform
-        map_base_trans = TransformStamped()
-        map_base_trans.header.stamp = self.get_clock().now().to_msg()
-        map_base_trans.header.frame_id = "map"
-        if (self.num_envs == 1):
-            map_base_trans.child_frame_id = "unitree_go2/base_link"
-        else:
-            map_base_trans.child_frame_id = f"unitree_go2_{env_idx}/base_link"
-        map_base_trans.transform.translation.x = base_pos[0].item()
-        map_base_trans.transform.translation.y = base_pos[1].item()
-        map_base_trans.transform.translation.z = base_pos[2].item()
-        map_base_trans.transform.rotation.x = base_rot[1].item()
-        map_base_trans.transform.rotation.y = base_rot[2].item()
-        map_base_trans.transform.rotation.z = base_rot[3].item()
-        map_base_trans.transform.rotation.w = base_rot[0].item()
-        self.broadcaster.sendTransform(map_base_trans)
+        #map_base_trans = TransformStamped()
+        #map_base_trans.header.stamp = self.get_clock().now().to_msg()
+        #map_base_trans.header.frame_id = "map"
+        #if (self.num_envs == 1):
+        #    map_base_trans.child_frame_id = "unitree_go2/base_link"
+        #else:
+        #    map_base_trans.child_frame_id = f"unitree_go2_{env_idx}/base_link"
+        #map_base_trans.transform.translation.x = base_pos[0].item()
+        #map_base_trans.transform.translation.y = base_pos[1].item()
+        #map_base_trans.transform.translation.z = base_pos[2].item()
+        #map_base_trans.transform.rotation.x = base_rot[1].item()
+        #map_base_trans.transform.rotation.y = base_rot[2].item()
+        #map_base_trans.transform.rotation.z = base_rot[3].item()
+        #map_base_trans.transform.rotation.w = base_rot[0].item()
+        #self.broadcaster.sendTransform(map_base_trans)
     
     def publish_pose(self, base_pos, base_rot, env_idx):
         pose_msg = PoseStamped()

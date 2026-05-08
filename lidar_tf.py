@@ -8,6 +8,7 @@ class LidarTf(Node):
         super().__init__('lidar_tf_node')
         
         # Das native ROS 2 Tool: Setzt automatisch die perfekten QoS-Regeln!
+        self.set_parameters([rclpy.parameter.Parameter('use_sim_time', rclpy.Parameter.Type.BOOL, True)])
         self.broadcaster = StaticTransformBroadcaster(self)
         
         self.get_logger().info('Lidar-Static-TF V2 aktiv! QoS-Firewall umgangen.')
@@ -18,7 +19,7 @@ class LidarTf(Node):
         
         # Zeitstempel ist hier die Echtzeit
         t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'base_link'
+        t.header.frame_id = 'unitree_go2/base_link'
         t.child_frame_id = 'unitree_go2/lidar_frame'
         
         # Der Lidar sitzt 10cm über dem Mittelpunkt

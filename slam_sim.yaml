@@ -1,5 +1,6 @@
 slam_toolbox:
   ros__parameters:
+    use_sim_time: true
     odom_frame: odom
     map_frame: map
     base_frame: unitree_go2/base_link
@@ -7,8 +8,8 @@ slam_toolbox:
     mode: mapping
 
     # RADIKALE RAM-SPAR-EINSTELLUNGEN
-    transform_timeout: 0.1         # Warte maximal 0.1s auf TF, dann wegwerfen!
-    tf_buffer_duration: 2.0        # Halte nur 2s TF-Historie vor
+    transform_timeout: 1.0         # Warte maximal 0.1s auf TF, dann wegwerfen!
+    tf_buffer_duration: 10.0        # Halte nur 2s TF-Historie vor
     minimum_time_interval: 0.2     # Nur alle 0.2s einen Scan verarbeiten (statt 17Hz)
     
     # Nachrichtenschlange begrenzen

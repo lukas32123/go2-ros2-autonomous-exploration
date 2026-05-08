@@ -5,15 +5,15 @@
 
 bt_navigator:
   ros__parameters:
-    use_sim_time: false # Change it to true when you use the simulation and false on the real machine
+    use_sim_time: true # Change it to true when you use the simulation and false on the real machine
     global_frame: map
-    robot_base_frame: base_link
+    robot_base_frame: unitree_go2/base_link
     odom_topic: /odom
     default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
 
 controller_server:
   ros__parameters:
-    use_sim_time: false
+    use_sim_time: true
     controller_frequency: 20.0 # Der Go2 ist schnell, 20Hz sorgt für flüssige Updates
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
@@ -76,7 +76,7 @@ controller_server:
 
 planner_server:
   ros__parameters:
-    use_sim_time: false
+    use_sim_time: true
     expected_planner_frequency: 10.0
     planner_plugins: ["GridBased"]
     GridBased:
@@ -87,7 +87,7 @@ planner_server:
 
 behavior_server:
   ros__parameters:
-    use_sim_time: false
+    use_sim_time: true
     costmap_topic: local_costmap/costmap_raw
     footprint_topic: local_costmap/published_footprint
     cycle_frequency: 10.0
@@ -101,7 +101,7 @@ behavior_server:
     wait:
       plugin: "nav2_behaviors/Wait"
     global_frame: odom
-    robot_base_frame: base_link
+    robot_base_frame: unitree_go2/base_link
     transform_tolerance: 0.1
     simulate_ahead_time: 2.0
     max_rotational_vel: 1.0
@@ -117,9 +117,10 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
-      robot_base_frame: base_link
-      use_sim_time: false
-      
+      robot_base_frame: unitree_go2/base_link
+      use_sim_time: true
+      transform_tolerance: 2.0
+
       # WICHTIG: Ohne diese Basis-Werte startet die Karte nicht!
       rolling_window: true
       width: 3
@@ -163,14 +164,15 @@ global_costmap:
       update_frequency: 2.0 # Muss nicht so schnell sein wie lokal
       publish_frequency: 1.0
       global_frame: map
-      robot_base_frame: base_link
-      use_sim_time: false
+      robot_base_frame: unitree_go2/base_link
+      use_sim_time: true
       always_send_full_costmap: true
       robot_radius: 0.35 # Vereinfachter Radius für globale Pfadplanung
       resolution: 0.05
       track_unknown_space: true # WICHTIG FÜR EXPLORATION! Erkennt graue Bereiche
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
-      
+      transform_tolerance: 2.0
+
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True

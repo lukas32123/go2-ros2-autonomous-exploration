@@ -8,9 +8,10 @@ import math
 class PcToScan(Node):
     def __init__(self):
         super().__init__('pc_to_scan_node')
+        self.set_parameters([rclpy.parameter.Parameter('use_sim_time', rclpy.Parameter.Type.BOOL, True)])
         self.sub = self.create_subscription(PointCloud2, '/unitree_go2/lidar/point_cloud', self.cb, qos_profile_sensor_data)
         self.pub = self.create_publisher(LaserScan, '/scan', 10)
-        self.get_logger().info('Turbo-Presse online! (Erzwinge perfekte Systemzeit)')
+        self.get_logger().info('Turbo-Presse online! (Nutze saubere Sim-Zeit und Lidar-Frame)')
         self.scan_count = 0
 
     def cb(self, msg):
@@ -19,10 +20,12 @@ class PcToScan(Node):
             self.get_logger().info(f'Turbo: {self.scan_count} Scans gesendet.')
         scan = LaserScan()
         
-        # DER ZEIT-HACK: Isaac Sim ignorieren, exakte Laptop-Zeit aufzwingen!
+        # FIX 1: Zeit-Hack entfernt! Wir nutzen den exakten Zeitstempel der Isaac Sim Punktwolke
         scan.header.stamp = self.get_clock().now().to_msg()
         
-        scan.header.frame_id = 'base_link'
+        # FIX 2: Der korrekte Frame für den Lidar auf dem Go2
+        scan.header.frame_id = 'unitree_go2/lidar_frame'
+        
         scan.angle_min = -math.pi
         scan.angle_max = math.pi
         scan.angle_increment = math.pi / 180.0
